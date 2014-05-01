@@ -1,0 +1,46 @@
+<!doctype html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <meta name="description" content="">
+    <!--<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1" />-->
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+    <link rel="stylesheet" href="styles/bb3769ca.main.css">
+  </head>
+  <body ng-controller="AppCtrl">
+    <br>
+    <br>
+    <br>
+    hello {{ user }}
+    <br>
+    <div ng-click="hello()">TAP ME - this works but is slow</div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <ion-content class="has-header" style="top: 124px">
+      <div class="list">
+        <div class="item item-input select-user" ng-click="hello()">
+          <span class="input-label">TAP ME</span>
+          <span class="text-left user-name">this doesn't work?!</span>
+        </div>
+      </div>
+    </ion-content>
+
+    <script data-main="scripts/7ec2c8b2.scripts" src="bower_components/requirejs/require.js"></script>
+
+    <!-- REMOVE THIS, AND IT STARTS WORKING?! -->
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+  </body>
+</html>
